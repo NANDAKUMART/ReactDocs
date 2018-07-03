@@ -132,30 +132,92 @@ app.get('/getRegisteredTeamDetails', function (req, res) {
 
 app.get('/getLeadingInfoDetails', function (req, res) {
 
-    getValuesFromTable("LeadingInfoTbl").
-    then(function(data) {
-        res.end(JSON.stringify(data));
-    }).catch(function(error) {
-        console.error(error);
-        res.end(error);
+    var MongoClient = require('mongodb').MongoClient;
+    var url = "mongodb://127.0.0.1:27017/test";
+
+    MongoClient.connect(url, function(err, db) {
+        if (err)
+        {
+            fail(err);
+        }
+
+        var dbo = db.db("test");
+
+        var mysort = { Points: -1 };
+        dbo.collection("LeadingInfoTbl").find({}).sort(mysort).toArray(function(err, result) {
+            if (err)
+            {
+                fail(err);
+            }
+            console.log("Inside getValuesFromTable:" + JSON.stringify(result));
+            db.close();
+            res.end(JSON.stringify(result));
+        });
     });
+
+});
+
+app.get('/getCollaborationDetails', function (req, res) {
+
+    var MongoClient = require('mongodb').MongoClient;
+    var url = "mongodb://127.0.0.1:27017/test";
+
+    MongoClient.connect(url, function(err, db) {
+        if (err)
+        {
+            fail(err);
+        }
+
+        var dbo = db.db("test");
+
+        var mysort = { WrittenDate: -1 };
+        dbo.collection("CollaborationTbl").find({}).sort(mysort).toArray(function(err, result) {
+            if (err)
+            {
+                fail(err);
+            }
+            console.log("Inside getValuesFromTable:" + JSON.stringify(result));
+            db.close();
+            res.end(JSON.stringify(result));
+        });
+    });
+
 });
 
 app.post("/postUserDetail", function(request, response) {
 
     console.log(request.body);
 
-    if (!request.body || 0 === request.body.length) {
-        getValuesFromTable("test", request.body).then(function (data) {
-            response.end("Success");
+    if (request.body) {
+        postValueToTable("test", request.body).then(function (data) {
+            response.end("{Status:Success}");
         }).catch(function (error) {
             console.error(error);
             response.end(error);
         });
     }
-    else
+    else {
+        console.log("Body Missing");
         response.end("Body Missing");
+    }
+});
 
+app.post("/postColloborationDetails", function(request, response) {
+
+    console.log(request.body);
+
+    if (request.body) {
+        postValueToTable("CollaborationTbl", request.body).then(function (data) {
+            response.end("{Status:Success}");
+        }).catch(function (error) {
+            console.error(error);
+            response.end(error);
+        });
+    }
+    else {
+        console.log("Body Missing");
+        response.end("Body Missing");
+    }
 });
 
 /* fs.readFile( "C:\\Users\\Administrator\\Desktop\\nodejsans.json", 'utf8', function (err, data) {
