@@ -145,7 +145,7 @@ app.post("/postUserDetail", function(request, response) {
 
     console.log(request.body);
 
-    if(request.body!=null) {
+    if (!request.body || 0 === request.body.length) {
         getValuesFromTable("test", request.body).then(function (data) {
             response.end("Success");
         }).catch(function (error) {
