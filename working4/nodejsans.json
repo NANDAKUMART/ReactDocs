@@ -1,0 +1,15 @@
+{     
+   "obj":
+	{
+         "name" : "ramesh",
+	  "password" : "password3",
+	  "profession" : "clerk",
+	  "id": 3   
+	},
+	"arra":[{
+	   "data":"1"
+	},
+	{
+	   "data":"2"
+	}]
+}
