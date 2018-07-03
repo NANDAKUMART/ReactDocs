@@ -67,3 +67,13 @@ LeadingInfoTbl:
 'Points':503,
 'SubmittedDate':'2018-01-04T23:28:56.782Z'
 }
+
+++++
+
+CollborationTbl:
+{
+'WrittenBy':'anil',
+'WrittenDate':'2018-04-01',
+'Subject':'How I can buy a good bike',
+'Desc':'How to get a bike?'
+}
