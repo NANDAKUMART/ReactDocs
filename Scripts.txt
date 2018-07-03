@@ -39,3 +39,31 @@ HackMasterTbl
 
 
 
+++++ Added
+
+
+Regsitered Team Table:-
+
+{
+'TeamId':1001,
+'TeamName':'Anything',
+'TeamCount':4,
+'RegisterdEmialId':'anything@verizon.com',
+'POC':'dono@verizon.com',
+'HackId':2015,
+'HackName':'React Challenge-1',
+'Updaloded':null,
+'IsCompleted':false
+}
+
+
+LeadingInfoTbl:
+
+{
+'HackId':2016,
+'HackName':'React Challenge-2',
+'TeamId':1001,
+'TeamName':'Anything',
+'Points':503,
+'SubmittedDate':'2018-01-04T23:28:56.782Z'
+}
