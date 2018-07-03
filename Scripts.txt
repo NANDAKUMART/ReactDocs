@@ -1,0 +1,41 @@
+
+HackDetailViewTbl
+
+{
+'HackId': 2016,
+'HackName':'React Challenge-2',
+'RegTeamCount':10,
+'StartDate':'2018-01-01T23:28:56.782Z',
+'EndDate':'2018-01-10T23:28:56.782Z'
+}
+
+{
+'HackId': 2015,
+'HackName':'React Challenge-1',
+'RegTeamCount':10,
+'StartDate':'2018-03-01T23:28:56.782Z',
+'EndDate':'2018-03-15T23:28:56.782Z'
+}
+
+
+========================
+
+
+HackMasterTbl
+
+{
+  'HackId': 2015,
+  'HackName':'React Challenge-1',
+  'Organiser':'Verizon',
+  'Details':'Soon Will be updated'
+}
+
+{
+  'HackId': 2016,
+  'HackName':'React Challenge-2',
+  'Organiser':'Verizon',
+  'Details':'Soon Will be updated'
+}
+
+
+
