@@ -1,0 +1,11 @@
+Install as given in the git:-
+https://github.com/jerairrest/react-chartjs-2
+Search for the "Installation via NPM"
+
+
+Ex:
+https://github.com/jerairrest/react-chartjs-2/blob/master/example/src/components/bar.js
+
+
+Check the options fopr the data here:
+https://stackoverflow.com/questions/44363037/reactjs-charts-implementation

@@ -1,3 +1,7 @@
+https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
+
+React CHarts: https://github.com/reactjs/react-chartjs
+
 
 https://github.com/danwrong/restler
 
