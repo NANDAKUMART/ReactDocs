@@ -7,12 +7,23 @@ class EventRegister extends Component {
    constructor(props)
    {
    super(props);
-   this.state={teamName:'',pocName:'',pocMailId:'',eventName:'',participantsId:''};
+   this.state={items:[],teamName:'',pocName:'',pocMailId:'',eventName:'',participantsId:''};
    this.submitForHackthon = this.submitForHackthon.bind(this);
    this.handleSubmit = this.handleSubmit.bind(this);
+   this.getHackMasterDetails = this.getHackMasterDetails.bind(this);
    }
 
-    submitForHackthon() {
+    componentDidMount() {
+        this.getHackMasterDetails();
+    }
+
+    getHackMasterDetails() {
+        fetch('http://localhost:8081/getHackMasterDetails')
+            .then(result => result.json())
+            .then(items => this.setState({items}));
+    }
+
+        submitForHackthon() {
 
         fetch('http://localhost:8081/postUserDetail', {
             method: 'POST',
@@ -75,11 +86,15 @@ class EventRegister extends Component {
               </label>
               <br/>
               <label>
+
                   Event:
                   <select onChange={(newValue) => this.setState({eventName: newValue.target.value})}>
-                      <option value="Event1">Event1</option>
-                      <option value="Event2">Event2</option>
-                      <option value="Event3">Event3</option>
+                      {
+                          this.state.items.map((item)=>
+                          {
+                              return <option key={item.HackName} value={item.HackName}>{item.HackName}</option>
+                          })
+                      }
                   </select>
 
               </label>
