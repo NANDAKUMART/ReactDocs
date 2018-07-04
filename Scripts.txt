@@ -77,3 +77,13 @@ CollborationTbl:
 'Subject':'How I can buy a good bike',
 'Desc':'How to get a bike?'
 }
+
+
+++++
+LoginTbl
+{    
+    "SNo" : NumberInt(1234), 
+    "UserId" : "nandakumar.thangavelu", 
+    "Password" : "verizon", 
+    "Role" : "User"
+}
