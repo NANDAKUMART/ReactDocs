@@ -170,3 +170,54 @@ Collo Tbl:-
     "Desc" : "435", 
     "WrittenDate" : "2018-07-03T22:21:12.034Z"
 }
+++++
+Leading
+
+
+
+
+{ 
+  
+    "HackId" : NumberInt(2016), 
+    "HackName" : "React Challenge-2", 
+    "TeamId" : NumberInt(1001), 
+    "TeamName" : "Anything", 
+    "Points" : NumberInt(503), 
+    "SubmittedDate" : "2018-01-04T23:28:56.782Z"
+}
+{ 
+   
+    "HackId" : NumberInt(2016), 
+    "HackName" : "React Challenge-8", 
+    "TeamId" : NumberInt(1001), 
+    "TeamName" : "Something", 
+    "Points" : NumberInt(573), 
+    "SubmittedDate" : "2018-01-02T23:28:56.782Z"
+}
+{ 
+    
+    "HackId" : NumberInt(2018), 
+    "HackName" : "React Challenge-9", 
+    "TeamId" : NumberInt(1003), 
+    "TeamName" : "Tarus", 
+    "Points" : NumberInt(207), 
+    "SubmittedDate" : "2018-01-02T23:28:56.782Z"
+}
+{ 
+   
+    "HackId" : NumberInt(2018), 
+    "HackName" : "React Challenge-10", 
+    "TeamId" : NumberInt(1003), 
+    "TeamName" : "DixsonGropus", 
+    "Points" : NumberInt(301), 
+    "SubmittedDate" : "2018-01-02T23:28:56.782Z"
+}
+{ 
+   
+    "HackId" : NumberInt(2018), 
+    "HackName" : "React Challenge-10", 
+    "TeamId" : NumberInt(1003), 
+    "TeamName" : "BisonGropus", 
+    "Points" : NumberInt(601), 
+    "SubmittedDate" : "2018-01-02T23:28:56.782Z"
+}
