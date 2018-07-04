@@ -87,3 +87,86 @@ LoginTbl
     "Password" : "verizon", 
     "Role" : "User"
 }
+
+
+
+
+++++
+Collo Tbl:-
+
+
+
+
+
+{    
+    "WrittenBy" : "Nanda", 
+    "WrittenDate" : "2018-07-03", 
+    "Subject" : "How I can Win", 
+    "Desc" : "Dono how to win. Could Someone help"
+}
+{   
+    "WrittenBy" : "kumar", 
+    "WrittenDate" : "2018-07-02", 
+    "Subject" : "How I can lose this exam", 
+    "Desc" : "Dono how to escape. Could Someone help"
+}
+{     
+    "WrittenBy" : "ajith", 
+    "WrittenDate" : "2018-08-02", 
+    "Subject" : "How I can gain weight", 
+    "Desc" : "Dono how to increase the weight. Could Someone help"
+}
+{    
+    "WrittenBy" : "sunil", 
+    "WrittenDate" : "2018-08-08", 
+    "Subject" : "How I can get good marks", 
+    "Desc" : "How to get markss?"
+}
+{     
+    "WrittenBy" : "anil", 
+    "WrittenDate" : "2018-04-01", 
+    "Subject" : "How I can buy a good bike", 
+    "Desc" : "How to get a bike?"
+}
+{    
+    "WrittenBy" : "patient", 
+    "Subject" : "Need medicine", 
+    "Desc" : "dono what medicine to eat?", 
+    "WrittenDate" : "2018-07-03T22:11:41.528Z"
+}
+{    
+    "WrittenBy" : "idiot patient", 
+    "Subject" : "headache", 
+    "Desc" : "who can advice?", 
+    "WrittenDate" : "2018-07-03T22:14:40.792Z"
+}
+{     
+    "WrittenBy" : "idiot patient1", 
+    "Subject" : "headache1", 
+    "Desc" : "who can advice?", 
+    "WrittenDate" : "2018-07-03T22:15:18.846Z"
+}
+{  
+    "WrittenBy" : "arul", 
+    "Subject" : "heart attack", 
+    "Desc" : "need mecine", 
+    "WrittenDate" : "2018-07-03T22:18:05.372Z"
+}
+{   
+    "WrittenBy" : "anand", 
+    "Subject" : "need car wash", 
+    "Desc" : "who will do good?", 
+    "WrittenDate" : "2018-07-03T22:18:39.331Z"
+}
+{    
+    "WrittenBy" : "freshPatient", 
+    "Subject" : "Need Rest", 
+    "Desc" : "How to get?", 
+    "WrittenDate" : "2018-07-03T22:19:42.683Z"
+}
+{     
+    "WrittenBy" : "122", 
+    "Subject" : "34", 
+    "Desc" : "435", 
+    "WrittenDate" : "2018-07-03T22:21:12.034Z"
+}
